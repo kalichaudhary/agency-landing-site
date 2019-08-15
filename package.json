@@ -1,0 +1,27 @@
+{
+  "name": "agency-landing-site",
+  "version": "1.0.0",
+  "description": "Agency Landing Site",
+  "main": "index.js",
+  "repository": "https://github.com/AndyOsei/agency-landing-site.git",
+  "author": "Andy Osei <andyosei36@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "next": "^9.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-flexbox-grid": "^2.1.2"
+  },
+  "devDependencies": {
+    "css-loader": "^3.2.0",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.39.2"
+  }
+}
