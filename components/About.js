@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import { Row, Col } from 'react-flexbox-grid'
 
-const CompanyLogo = () => (
+const About = () => (
   <Fragment>
     <Row>
       <Col xs={12}>
@@ -20,4 +20,4 @@ const CompanyLogo = () => (
   </Fragment>
 )
 
-export default CompanyLogo
+export default About

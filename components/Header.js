@@ -1,102 +1,96 @@
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
 import { Row, Col } from 'react-flexbox-grid'
-import { Fragment } from 'react'
 
-const Nav = ({ name }) => {
-  return (
-    <Fragment>
-      <li>{name}</li>
-      <style jsx>{`
-        li {
-          text-align: left;
-          font: Bold 16px/21px Roboto;
-          letter-spacing: 0;
-          color: #1E2F4F;
-          list-style: none;
-          margin: 5px;
-          display: inline;
-          font-weight: 500;
-        }
-      `}</style>
-    </Fragment>
-  )
+const Nav = ({ name }) => (
+  <Fragment>
+    <li>{name}</li>
+    <style jsx>{`
+      li {
+        text-align: center;
+        font: Bold 16px/21px Roboto;
+        letter-spacing: 0;
+        color: #1E2F4F;
+        list-style: none;
+        margin: 10px;
+        display: block;
+        font-weight: 500;
+      }
+    `}</style>
+  </Fragment>
+)
+
+Nav.propTypes = {
+  name: PropTypes.string.isRequired,
 }
 
-const Header = () => {
-  return (
-    <Fragment>
-      <Row>
-        <Col xs={2} md={1} lg={1}/>
-        <Col md={10} lg={10}>
-          <Row between="xs">
-            <Col md={6} lg={6}>
-              <div>
-              <img src="/static/Logo.png" alt="my image" className="logo-container"/>
-              </div>
-            </Col>
-            <Col md={6} lg={6}>
-              <ul className="header-links">
-                <Nav name="HOME" />
-                <Nav name="ABOUT US" />
-                <Nav name="SERVICES" />
-                <Nav name="PORTFOLIO" />
-                <Nav name="BLOG" />
-                <Nav name="CONTACT US" />
-              </ul>
-            </Col>
-          </Row>
-        </Col>
-        <Col xs={2} md={1} lg={1}/>
-      </Row>
-      <Row between="xs">
-          <Col xs={2} md={1} lg={1}/>
-          <Col xs={20} md={10} lg={10}>
-            <Row>
-              <Col xs={10} md={5} lg={5}>
-                <div className="main-header-text">The Best Agency For Your Creative Business</div>
-                <div className="sub-header-text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-                <button className="get-started-btn">GET STARTED</button>
-              </Col>
-              <Col xs={2} md={1} lg={1}/>
-              <Col xs={10} md={5} lg={5}>
-                <div className="img-container">
-                  <img src="/static/Illustrations.png" alt="my image" />
-                </div>
-              </Col>
-              <Col xs={2} md={1} lg={1}/>
-            </Row>
-          </Col>
-          <Col xs={2} md={1} lg={1}/>
-      </Row>
-      <style jsx>{`
-        ul {
+const Header = () => (
+  <Fragment>
+    <Row center="xs">
+      <Col xs={12}>
+        <img alt=" " className="logo-container" src="/static/Logo.png" />
+      </Col>
+      <Col xs={12}>
+        <ul className="header-links">
+          <Nav name="HOME" />
+          <Nav name="ABOUT US" />
+          <Nav name="SERVICES" />
+          <Nav name="PORTFOLIO" />
+          <Nav name="BLOG" />
+          <Nav name="CONTACT US" />
+        </ul>
+      </Col>
+    </Row>
+    <Row>
+      <Col xs={12} className="img-container" first="xs" last="sm">
+        <img src="/static/Illustrations.png" alt=" " width="335px" height="351px"/>
+      </Col>
+      <Col xs={12}>
+        <div className="main-header">
+          <div className="main-header-text">
+            The Best Agency For
+            Your Creative Business
+          </div>
+          <div className="sub-header-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </div>
+          <div className="get-started-btn">
+            <button>GET STARTED</button>
+          </div>
+        </div>
+      </Col>
+    </Row>
+    <style jsx>{`
+        ul.header-links {
           padding: 0;
+          margin: 40px 0px;
         }
 
         .img-container {
-          margin-bottom: 30px;
+          margin: 30px 0px;
         }
+
         .logo-container {
-          margin: 59px 0px;
+          margin: 20px 0px;
           height: 33px;
         }
 
-        .header-links {
-          margin: 59px 0px;
+        .main-header {
+          text-align: center;
         }
 
         .main-header-text {
-          text-align: left;
-          font: Bold 80px/95px Roboto;
-          font-size: 3.8em;
+          text-align: center;
+          font: Bold 30px/45px Roboto;
+          font-size: 18px;
           letter-spacing: 0;
           color: #1E2F4F;
           margin-top: 5px;
         }
 
         .sub-header-text {
-          text-align: left;
+          text-align: center;
           font: Regular 16px/30px Roboto;
           letter-spacing: 0;
           color: #747F92;
@@ -104,16 +98,20 @@ const Header = () => {
         }
 
         .get-started-btn {
+          display: inline-block;
           background: #1B8CFD 0% 0% no-repeat padding-box;
           color: #FFFFFF;
           border-radius: 25px;
           font-size: 15px;
-          padding: 15px 27px 15px 28px;
+          padding: 8px;
           margin-top: 30px;
         }
+
+        .get-started-btn button{
+          color: #FFFFFF;
+        }
       `}</style>
-    </Fragment>
-  )
-}
+  </Fragment>
+)
 
 export default Header
