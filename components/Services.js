@@ -86,14 +86,20 @@ const Services = () => (
     }
 
     .service-main .main {
-      font: Bold 30px/46px Roboto;
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 46px;
       letter-spacing: 0;
       color: #1E2F4F;
       margin: 10px 5px;
     }
      
     .service-main .description {
-      font: Regular 16px/30px Roboto;
+      font-family: 'Roboto';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 30px;
       letter-spacing: 0;
       color: #747F92;
       margin: 20px 5px;
@@ -113,14 +119,20 @@ const Services = () => (
     .service-item .title {
       margin: 10px;
       text-align: center;
-      font: Bold 25px/33px Roboto;
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 33px;
       letter-spacing: 0;
     }
 
     .service-item .description {
       margin: 10px;
       text-align: center;
-      font: Regular 16px/26px Roboto;
+      font-family: 'Roboto';
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
       letter-spacing: 0;
     }
 
@@ -152,7 +164,10 @@ const Services = () => (
     .more-details-btn span {
       text-transform: uppercase;
       text-align: center;
-      font: Bold 15px/20px Roboto;
+      font-family: 'Roboto';
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 20px;
       letter-spacing: 0;
       color: #1B8CFD;
     }

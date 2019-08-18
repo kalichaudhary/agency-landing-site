@@ -8,7 +8,10 @@ const Nav = ({ name }) => (
     <style jsx>{`
       li {
         text-align: center;
-        font: Bold 16px/21px Roboto;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
         letter-spacing: 0;
         color: #1E2F4F;
         list-style: none;
@@ -64,7 +67,7 @@ const Header = () => (
     <style jsx>{`
         ul.header-links {
           padding: 0;
-          margin: 40px 0px;
+          margin: 20px 0px;
         }
 
         .img-container {
@@ -83,7 +86,9 @@ const Header = () => (
         .main-header-text {
           text-align: center;
           font: Bold 30px/45px Roboto;
-          font-size: 18px;
+          font-family: 'Roboto';
+          font-weight: 700;
+          font-size: 2em;
           letter-spacing: 0;
           color: #1E2F4F;
           margin-top: 5px;
@@ -91,7 +96,9 @@ const Header = () => (
 
         .sub-header-text {
           text-align: center;
-          font: Regular 16px/30px Roboto;
+          font-family: 'Roboto';
+          font-weight: 400;
+          font-size: 0.7em;
           letter-spacing: 0;
           color: #747F92;
           margin-top: 20px;

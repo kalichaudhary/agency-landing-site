@@ -1,30 +1,31 @@
 import React, { Fragment } from 'react'
 import { Row, Col } from 'react-flexbox-grid'
 
-const About = () => (
+const Team = () => (
   <Fragment>
     <Row center="xs">
       <Col xs={12}>
-        <div className="about-main">
+        <div className="team-main">
           <div className="title">
-            About us
+            Our Team
           </div>
-        </div>
-      </Col>
-      <Col xs={12} left="xs" right="sm">
-        <div className="about-img-container">
-          <img src="/static/undraw_note_list_etto.png" alt=" " />
         </div>
       </Col>
       <Col xs={12}>
-        <div className="about-main">
+        <div className="team-img-container">
+          <img src="/static/team.png" alt=" " />
+        </div>
+      </Col>
+      <Col xs={12} left="xs" right="sm">
+        <div className="team-main">
           <div className="main">
-            We Will Plan, Design and Developing & Maintain Project
+            We have an excellent team of creative people
           </div>
           <div className="description">
-            It is a long established fact that a reader will be distracted by the readable content
-            of a page when looking at its layout. The point of using Lorem Ipsum is that it
-            has a more-or- less normal distribution of letters.
+            It is a long established fact that a reader will be distracted by the
+            readable content of a page when looking at its layout.
+            The point of using Lorem Ipsum is that it has a more-or-
+            less normal distribution of letters.
           </div>
           <div className="read-more-btn">
             <span>read more</span>
@@ -33,12 +34,11 @@ const About = () => (
       </Col>
     </Row>
     <style jsx>{`
-        .about-img-container {
-          margin: 30px 0px;
-          background: url('/static/undraw_note_list_bg.png');
+        .team-img-container {
+          margin: 10px 0px;
         }
 
-        .about-main {
+        .team-main {
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -46,20 +46,18 @@ const About = () => (
           margin: 30px 0px;
         }
     
-        .about-main .title {
+        .team-main .title {
           text-transform: uppercase;
+          letter-spacing: 0;
+          color: #1B8CFD;
           font-family: 'Roboto';
           font-weight: 500;
           font-size: 20px;
           line-height: 38px;
-          letter-spacing: 0;
-          color: #1B8CFD;
-          width: 91px;
-          height: 26px;
           margin: 10px 5px;
         }
     
-        .about-main .main {
+        .team-main .main {
           font-family: 'Roboto';
           font-weight: 700;
           font-size: 30px;
@@ -69,7 +67,7 @@ const About = () => (
           margin: 10px 5px;
         }
          
-        .about-main .description {
+        .team-main .description {
           font-family: 'Roboto';
           font-weight: 400;
           font-size: 16px;
@@ -84,13 +82,16 @@ const About = () => (
           box-shadow: 0px 3px 24px #1B8CFD;
           border-radius: 25px;
           padding: 10px 23px;
-          margin: 30px 0px;
+          margin: 10px 0px;
         }
     
         .read-more-btn span {
           text-transform: uppercase;
           text-align: center;
-          font: Bold 15px/20px Roboto;
+          font-family: 'Roboto';
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 20px;
           letter-spacing: 0;
           color: #FFFFFF;
         }
@@ -98,4 +99,4 @@ const About = () => (
   </Fragment>
 )
 
-export default About
+export default Team
