@@ -9,6 +9,7 @@ import ContactBanner from '../components/ContactBanner';
 import Fonts from '../components/Fonts';
 import Team from '../components/Team';
 import Statistics from '../components/Statistics';
+import Portfolio from '../components/Portfolio';
 
 class Index extends Component {
   componentDidMount() {
@@ -26,6 +27,7 @@ class Index extends Component {
           <ContactBanner />
           <Team />
           <Statistics />
+          <Portfolio />
         </Grid>
       </Layout>
     )

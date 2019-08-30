@@ -50,7 +50,7 @@ const About = () => (
           text-transform: uppercase;
           font-family: 'Roboto';
           font-weight: 500;
-          font-size: 20px;
+          font-size: 18px;
           line-height: 38px;
           letter-spacing: 0;
           color: #1B8CFD;
